@@ -24,7 +24,7 @@ namespace ContozooAPI.Controllers
         //Get all action
         [HttpGet]
         //[Route("/")]
-        public async Task<ActionResult<IEnumerable<Animals>>> GetAnimals()
+        public async Task<ActionResult<IEnumerable<Animals>>> GetAllAnimals()
         {
             return await _context.Animals.ToListAsync();
         }
@@ -45,7 +45,7 @@ namespace ContozooAPI.Controllers
 
         // POST action
         [HttpPost]
-        public async Task<ActionResult<Animals>> CreateTodoItem(Animals animal)
+        public async Task<ActionResult<Animals>> CreateAnimals(Animals animal)
         {
             //var animals = new Animals
             //{
